@@ -22,9 +22,11 @@ def main() -> None:
 
     if x == 1:
         print("Sorry, wrong door")
+        bad_ending()
     else: 
         if x == 2:
             print("Sorry, wrong door")
+            bad_ending()
         else:
             print("Correct, you get one point! On to the next level")
             points = points + 1
@@ -38,9 +40,11 @@ def level_two() -> None:
     global points
     if y == 1:
         print("Sorry, wrong door")
+        bad_ending()
     else: 
         if y == 3: 
             print("Sorry, wrong door")
+            bad_ending()
         else:
             print("Correct, you get another point! However, this time, you get the chance to answer a question right for an extra three points!")
             print("Now we are gonna give you a random question")
@@ -78,6 +82,7 @@ def final_level() -> None:
 
     if z == 1: 
         print("Sorry, wrong door")
+        bad_ending()
     else:
         print("Correct, you get another 10 points!")
         points = points + 10
@@ -91,6 +96,15 @@ def ending() -> None:
     a: str = str(input("Congrats, " + player + ", you scored " + str(points) + " points. Do you want to play again? "))
 
     if (a == "Yes" or a == "Yes" or a == "yes"):
+        main()
+    else:
+        print("Alright, hope you had fun, have a good rest of your day! " + emoji)
+
+
+def bad_ending() -> None:
+    """Game Over."""
+    g: str = str(input("Do you want to play again? "))
+    if (g == "Yes" or g == "Yes" or g == "yes"):
         main()
     else:
         print("Alright, hope you had fun, have a good rest of your day! " + emoji)
