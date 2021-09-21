@@ -85,7 +85,7 @@ def final_level() -> None:
 
 
 def ending() -> None:
-    """End of Game"""
+    """End of Game."""
     global player
     global points
     a: str = str(input("Congrats, " + player + ", you scored " + str(points) + " points. Do you want to play again? "))
@@ -93,12 +93,12 @@ def ending() -> None:
     if (a == "Yes" or a == "Yes" or a == "yes"):
         main()
     else:
-        print("Alright, hope you had fun, have a good rest of your day " + emoji)
+        print("Alright, hope you had fun, have a good rest of your day! " + emoji)
 
 
 def greet() -> None:
     """Greeting the player!"""
-    print("Hello, I hope you are doing well " + emoji)
+    print("Hello, I hope you are doing well! " + emoji)
     global player
     player = input("What is your name or a nickname that we can call you? ")
     print("Hey " + player + ", welcome to the guess the correct door game, hope you enjoy!")
