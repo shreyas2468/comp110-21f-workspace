@@ -4,6 +4,10 @@ __author__ = "730391001"
 
 from random import randint
 
+points: int = 0
+
+player: str = " "
+
 emoji: str = "\U0001F600"
 
 
