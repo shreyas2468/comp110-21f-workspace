@@ -9,12 +9,12 @@ def only_evens(xs: list[int]) -> list[int]:
     for item in xs:
         if item % 2 == 0:
             new_list.append(item)
-    return new_list\
+    return new_list
 
 
-def  sub(s: list[int], start: int, end: int) -> list[int]:
+def sub(s: list[int], start: int, end: int) -> list[int]:
     """Subset of a given list."""
-    if s ==[] or start >= end:
+    if s == [] or start >= end:
         return []
     elif start < 0:
         start = 0
