@@ -2,7 +2,7 @@
 
 from exercises.ex05.utils import only_evens, sub, concat
 
-__author__ = "123456789"
+__author__ = "730391001"
 
 
 def test_only_evens_empty_list() -> None:
@@ -36,7 +36,7 @@ def test_sub_three() -> None:
 
 
 def test_concat_one() -> None:
-    """first test."""
+    """First test."""
     assert concat([2], [3]) == [2, 3]
 
 
@@ -46,5 +46,5 @@ def test_concat_two() -> None:
 
 
 def test_concat_three() -> None:
-    """Don't return the empty list"""
+    """Don't return the empty list."""
     assert concat([], [1]) == [1]
